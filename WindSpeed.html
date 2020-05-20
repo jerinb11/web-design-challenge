@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<style>
+  body {
+    background-color: lightgrey;
+  }
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Visualization Dashboard (Latitude)</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+  <!--Navigation bar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand" href="index.html"
+      style="font-family:georgia,garamond,serif;font-size:24px;font-style:normal;"><button type="button"
+        class="btn btn-light"><b>Lattitude</a></button></b>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"
+      style="font-family:georgia,garamond,serif;font-size:20px;font-style:normal;">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Data.html" alig="right">Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Plots.html" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="MaxTemp.html">Max Temperature</a>
+            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+            <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+          </div>
+        </li>
+    </div>
+  </nav>
+
+
+  <!--Layout-->
+
+  <div class="container">
+    <p style="font-family:georgia,garamond,serif;font-size:38px;font-style:normal;" align="center"><b>Weather & Vacation
+        Plots</p></b>
+    <!--This example demonstrates a 50%/50% split on small, medium and large devices. On extra small devices, it will stack (100% width). -->
+    <div class="row justify-content-around">
+      <div class="col-12" style="background-color:white;">
+        <p
+          style="font-family:georgia,garamond,serif;font-size:34px;font-style:normal;padding: 5px; margin: 10px 10px 0px 0px;">
+          <b>Latitude v. Wind Speed</p></b>
+        <div align="center">
+          <h5>vs. Wind Speed</h5>
+          <img src="Lat_v_Wind_Speed_plot.png" alt="Latitude v. Wind Speed" class="center" height="" width=""
+            style='float: ; border: 5px solid $theme; padding: 5px; margin: 10px 5px 5px 5px;'>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+  <br>
+
+  <!--Footer-->
+  <style>
+    .footer {
+      position: ;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+  </style>
+
+  <div class="footer">
+    <p>Copyright © 2020 Jerin Black</p>
+  </div>
+
+</body>
+
+</html>
